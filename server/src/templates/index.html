@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tidy Talk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="full-screen flex-center">
+    <h1 class="text-xl">Tidy_Talk</h1>
+    <p style="font-size: 1.5em;">
+        <em>Transform your verbal chatter into cleaned, structured text!</em>
+        <br><br><br>
+    </p>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <input type="file" name="audio_file" accept=".wav,.mp3" required>
+        <button type="submit">Process File</button>
+    </form>
+    <!-- <div class="button-container">
+        <form action="/process" method="post" enctype="multipart/form-data">
+            <input type="file" name="audio_file" accept=".wav,.mp3" required>
+            <button type="submit">Process File</button>
+        </form>
+    </div> -->
+    <p>
+        <br><br>
+        <strong>How to use</strong>
+        <br><br>
+        Load your audio file (.mp3, .wav), click `Process File`, and then wait patiently.
+        <br><br>
+        Your output file (.docx) will download automatically when ready.
+        <br><br><br>
+        <strong>Notes</strong>
+        <br><br>
+        It can handle long audio files (>10 minutes), though this will increase the wait time.
+        <br><br>
+        N.B. Maximum file size is 25mb. If your file size is above this, consider converting to a more compressed audio form (e.g., .mp3), or split into multiple files.
+        <br><br>
+    </p>
+    <p>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="theRealDyer" data-color="#ff813f" data-emoji=""  data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
+        <br>
+    </p>
+    <footer>
+        <p>&copy; 2023 Tidy_Talk James Dyer. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
